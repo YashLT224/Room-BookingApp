@@ -67,3 +67,14 @@ type RoomRestriction struct {
 	Reservation   Reservation
 	Restriction   Restriction
 }
+
+
+// RoomType is the room restriction model
+type RoomType struct {
+	ID            int
+	StartDate     time.Time
+	EndDate       time.Time
+	luxury        int
+	ReservationID int
+	RestrictionID int
+}
