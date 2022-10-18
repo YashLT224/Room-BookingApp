@@ -15,3 +15,9 @@ func (e errors) Get(field string) string {
 	}
 	return es[0]
 }
+
+//failed errors
+func (e errors) failed(field, message string) {
+	e[field] = append(e[field], message)
+	fmt.println(field);
+}
